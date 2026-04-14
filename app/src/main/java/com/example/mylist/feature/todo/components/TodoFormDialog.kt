@@ -1,4 +1,4 @@
-﻿package com.example.mylist.presentation.ui.components
+package com.example.mylist.feature.todo.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -14,8 +14,9 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.mylist.core.ui.components.AppTextField
 import com.example.mylist.domain.model.Priority
-import com.example.mylist.presentation.viewmodel.TodoFormState
+import com.example.mylist.feature.todo.TodoFormState
 
 @Composable
 fun TodoFormDialog(
@@ -70,7 +71,6 @@ fun TodoFormDialog(
         confirmButton = {
             Button(onClick = onConfirm) {
                 Text(if (isEditing) "Salvar" else "Adicionar")
-
             }
         },
         dismissButton = {

@@ -1,4 +1,4 @@
-package com.example.mylist.presentation.ui.components
+package com.example.mylist.feature.todo.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column

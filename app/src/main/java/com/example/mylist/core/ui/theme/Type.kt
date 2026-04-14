@@ -1,4 +1,4 @@
-﻿package com.example.mylist.presentation.ui.theme
+package com.example.mylist.core.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

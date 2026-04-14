@@ -1,4 +1,4 @@
-﻿package com.example.mylist.presentation.viewmodel
+package com.example.mylist.feature.todo
 
 import com.example.mylist.domain.model.Priority
 import com.example.mylist.domain.model.Todo

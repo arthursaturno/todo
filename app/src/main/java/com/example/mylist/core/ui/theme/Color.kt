@@ -1,4 +1,4 @@
-﻿package com.example.mylist.presentation.ui.theme
+package com.example.mylist.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

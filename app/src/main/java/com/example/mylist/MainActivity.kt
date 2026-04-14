@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.example.mylist.presentation.navigation.AppNavigation
-import com.example.mylist.presentation.ui.theme.TodoTheme
+import com.example.mylist.core.ui.theme.TodoTheme
+import com.example.mylist.navigation.AppNavigation
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
