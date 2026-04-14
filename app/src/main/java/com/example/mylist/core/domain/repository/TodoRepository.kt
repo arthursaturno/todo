@@ -1,6 +1,5 @@
-﻿package com.example.mylist.domain.repository
-
-import com.example.mylist.domain.model.Todo
+﻿package com.example.mylist.core.domain.repository
+import com.example.mylist.core.domain.model.Todo
 import kotlinx.coroutines.flow.Flow
 
 interface TodoRepository {

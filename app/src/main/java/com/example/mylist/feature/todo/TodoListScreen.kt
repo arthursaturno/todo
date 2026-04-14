@@ -1,5 +1,4 @@
 package com.example.mylist.feature.todo
-
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -41,8 +40,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.example.mylist.domain.usecase.SortBy
-import com.example.mylist.domain.usecase.TodoFilter
+import com.example.mylist.core.domain.usecase.SortBy
+import com.example.mylist.core.domain.usecase.TodoFilter
 import com.example.mylist.feature.todo.components.AppDrawer
 import com.example.mylist.feature.todo.components.EmptyState
 import com.example.mylist.feature.todo.components.TodoFormDialog
@@ -52,6 +51,7 @@ import kotlinx.coroutines.launch
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TodoListScreen(
+    onLogout: () -> Unit,
     viewModel: TodoViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -76,7 +76,8 @@ fun TodoListScreen(
                 onFilterSelected = { filter ->
                     viewModel.setFilter(filter)
                     scope.launch { drawerState.close() }
-                }
+                },
+                onLogout = onLogout
             )
         }
     ) {
@@ -169,6 +170,7 @@ fun TodoListScreen(
                 onTitleChange = viewModel::onTitleChange,
                 onDescriptionChange = viewModel::onDescriptionChange,
                 onPriorityChange = viewModel::onPriorityChange,
+                onDueDateChange = viewModel::onDueDateChange,
                 onConfirm = viewModel::saveTodo,
                 onDismiss = viewModel::dismissDialog
             )

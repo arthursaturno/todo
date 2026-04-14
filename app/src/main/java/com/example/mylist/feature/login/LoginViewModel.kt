@@ -1,8 +1,7 @@
 package com.example.mylist.feature.login
-
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mylist.domain.usecase.LoginUseCase
+import com.example.mylist.core.domain.usecase.LoginUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

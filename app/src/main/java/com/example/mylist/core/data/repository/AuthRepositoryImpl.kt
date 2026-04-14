@@ -1,7 +1,6 @@
-package com.example.mylist.data.repository
-
-import com.example.mylist.domain.model.User
-import com.example.mylist.domain.repository.AuthRepository
+package com.example.mylist.core.data.repository
+import com.example.mylist.core.domain.model.User
+import com.example.mylist.core.domain.repository.AuthRepository
 import javax.inject.Inject
 
 class AuthRepositoryImpl @Inject constructor() : AuthRepository {

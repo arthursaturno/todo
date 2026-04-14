@@ -1,10 +1,9 @@
-﻿package com.example.mylist.data.repository
-
-import com.example.mylist.data.local.dao.TodoDao
-import com.example.mylist.data.mapper.toDomain
-import com.example.mylist.data.mapper.toEntity
-import com.example.mylist.domain.model.Todo
-import com.example.mylist.domain.repository.TodoRepository
+package com.example.mylist.core.data.repository
+import com.example.mylist.core.data.local.dao.TodoDao
+import com.example.mylist.core.data.mapper.toDomain
+import com.example.mylist.core.data.mapper.toEntity
+import com.example.mylist.core.domain.model.Todo
+import com.example.mylist.core.domain.repository.TodoRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject

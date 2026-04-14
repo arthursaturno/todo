@@ -1,7 +1,6 @@
-package com.example.mylist.domain.usecase
-
-import com.example.mylist.domain.model.User
-import com.example.mylist.domain.repository.AuthRepository
+package com.example.mylist.core.domain.usecase
+import com.example.mylist.core.domain.model.User
+import com.example.mylist.core.domain.repository.AuthRepository
 import javax.inject.Inject
 
 class LoginUseCase @Inject constructor(

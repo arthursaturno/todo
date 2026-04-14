@@ -1,9 +1,8 @@
-﻿package com.example.mylist.data.local.database
-
+﻿package com.example.mylist.core.data.local.database
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.mylist.data.local.dao.TodoDao
-import com.example.mylist.data.local.entity.TodoEntity
+import com.example.mylist.core.data.local.dao.TodoDao
+import com.example.mylist.core.data.local.entity.TodoEntity
 
 @Database(
     entities = [TodoEntity::class],

@@ -1,8 +1,7 @@
-﻿package com.example.mylist.data.mapper
-
-import com.example.mylist.data.local.entity.TodoEntity
-import com.example.mylist.domain.model.Priority
-import com.example.mylist.domain.model.Todo
+package com.example.mylist.core.data.mapper
+import com.example.mylist.core.data.local.entity.TodoEntity
+import com.example.mylist.core.domain.model.Priority
+import com.example.mylist.core.domain.model.Todo
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -13,7 +12,7 @@ fun TodoEntity.toDomain(): Todo = Todo(
     title = title,
     description = description,
     isCompleted = isCompleted,
-    priority = Priority.valueOf(priority),
+    priority = runCatching { Priority.valueOf(priority) }.getOrDefault(Priority.MEDIUM),
     createdAt = LocalDateTime.parse(createdAt, formatter),
     dueDate = dueDate?.let { LocalDateTime.parse(it, formatter) }
 )

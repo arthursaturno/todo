@@ -1,9 +1,8 @@
-﻿package com.example.mylist.di
-
+package com.example.mylist.core.di
 import android.content.Context
 import androidx.room.Room
-import com.example.mylist.data.local.dao.TodoDao
-import com.example.mylist.data.local.database.AppDatabase
+import com.example.mylist.core.data.local.dao.TodoDao
+import com.example.mylist.core.data.local.database.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,5 +1,4 @@
 package com.example.mylist.feature.todo.components
-
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -29,12 +28,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.mylist.domain.usecase.TodoFilter
+import com.example.mylist.core.domain.usecase.TodoFilter
+import com.example.mylist.core.ui.components.AppButton
 
 @Composable
 fun AppDrawer(
     selectedFilter: TodoFilter,
-    onFilterSelected: (TodoFilter) -> Unit
+    onFilterSelected: (TodoFilter) -> Unit,
+    onLogout: () -> Unit
 ) {
     ModalDrawerSheet(modifier = Modifier.fillMaxWidth(0.7f)) {
         Row(
@@ -96,5 +97,13 @@ fun AppDrawer(
                     .padding(horizontal = 16.dp, vertical = 14.dp)
             )
         }
+
+        Spacer(modifier = Modifier.weight(1f))
+
+        AppButton(
+            text = "Sair",
+            onClick = onLogout,
+            modifier = Modifier.padding(horizontal = 16.dp, vertical = 24.dp)
+        )
     }
 }

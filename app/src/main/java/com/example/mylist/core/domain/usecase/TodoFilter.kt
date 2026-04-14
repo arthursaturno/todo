@@ -1,4 +1,4 @@
-﻿package com.example.mylist.domain.usecase
+﻿package com.example.mylist.core.domain.usecase
 
 enum class TodoFilter { ALL, ACTIVE, COMPLETED }
 

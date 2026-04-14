@@ -1,7 +1,6 @@
-﻿package com.example.mylist.domain.usecase
-
-import com.example.mylist.domain.model.Todo
-import com.example.mylist.domain.repository.TodoRepository
+﻿package com.example.mylist.core.domain.usecase
+import com.example.mylist.core.domain.model.Todo
+import com.example.mylist.core.domain.repository.TodoRepository
 import javax.inject.Inject
 
 class AddTodoUseCase @Inject constructor(

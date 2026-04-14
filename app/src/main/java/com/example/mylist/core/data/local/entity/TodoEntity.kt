@@ -1,5 +1,4 @@
-﻿package com.example.mylist.data.local.entity
-
+﻿package com.example.mylist.core.data.local.entity
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey

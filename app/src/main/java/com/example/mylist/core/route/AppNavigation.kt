@@ -1,5 +1,4 @@
-package com.example.mylist.navigation
-
+package com.example.mylist.core.route
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -24,7 +23,13 @@ fun AppNavigation() {
             )
         }
         composable(AppRoute.TodoList.route) {
-            TodoListScreen()
+            TodoListScreen(
+                onLogout = {
+                    navController.navigate(AppRoute.Login.route) {
+                        popUpTo(AppRoute.TodoList.route) { inclusive = true }
+                    }
+                }
+            )
         }
     }
 }

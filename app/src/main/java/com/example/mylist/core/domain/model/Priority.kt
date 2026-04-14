@@ -1,4 +1,4 @@
-﻿package com.example.mylist.domain.model
+﻿package com.example.mylist.core.domain.model
 
 enum class Priority(val label: String, val order: Int) {
     LOW(label = "Baixa", order = 3),

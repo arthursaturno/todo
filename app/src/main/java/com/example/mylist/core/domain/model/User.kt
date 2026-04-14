@@ -1,4 +1,4 @@
-package com.example.mylist.domain.model
+package com.example.mylist.core.domain.model
 
 data class User(
     val email: String,

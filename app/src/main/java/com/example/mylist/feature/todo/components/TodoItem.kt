@@ -1,5 +1,4 @@
 package com.example.mylist.feature.todo.components
-
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -32,8 +31,8 @@ import androidx.compose.ui.unit.dp
 import com.example.mylist.core.ui.theme.PriorityHigh
 import com.example.mylist.core.ui.theme.PriorityLow
 import com.example.mylist.core.ui.theme.PriorityMedium
-import com.example.mylist.domain.model.Priority
-import com.example.mylist.domain.model.Todo
+import com.example.mylist.core.domain.model.Priority
+import com.example.mylist.core.domain.model.Todo
 
 @Composable
 fun TodoItem(

@@ -1,7 +1,6 @@
-package com.example.mylist.di
-
-import com.example.mylist.data.repository.AuthRepositoryImpl
-import com.example.mylist.domain.repository.AuthRepository
+package com.example.mylist.core.di
+import com.example.mylist.core.data.repository.AuthRepositoryImpl
+import com.example.mylist.core.domain.repository.AuthRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

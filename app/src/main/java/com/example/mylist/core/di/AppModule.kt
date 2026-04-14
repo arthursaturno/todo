@@ -1,7 +1,6 @@
-﻿package com.example.mylist.di
-
-import com.example.mylist.data.repository.TodoRepositoryImpl
-import com.example.mylist.domain.repository.TodoRepository
+package com.example.mylist.core.di
+import com.example.mylist.core.data.repository.TodoRepositoryImpl
+import com.example.mylist.core.domain.repository.TodoRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

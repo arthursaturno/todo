@@ -1,5 +1,5 @@
-﻿package com.example.mylist.domain.model
-
+﻿package com.example.mylist.core.domain.model
+import com.example.mylist.core.domain.model.Priority
 import java.time.LocalDateTime
 
 data class Todo(
